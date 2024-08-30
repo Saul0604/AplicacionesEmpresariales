@@ -1,20 +1,16 @@
-let miNumero: number = 10;
-
+"use strict";
+let miNumero = 10;
 miNumero = 10 + 10;
 miNumero = 2.5;
 console.log(miNumero);
-
-let booleano: boolean = true;
+let booleano = true;
 booleano = false;
 //booleano = 3;
 //booleano = false;
-
-let encendido: boolean;
+let encendido;
 encendido = true;
-console.log("encendido es",encendido);
-
+console.log("encendido es", encendido);
 encendido = true && false;
 console.log(encendido);
-
 encendio = true && true;
-console.log("nuevo encendido", encendido)
+console.log("nuevo encendido", encendido);
