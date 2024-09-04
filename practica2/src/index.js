@@ -12,5 +12,3 @@ encendido = true;
 console.log("encendido es", encendido);
 encendido = true && false;
 console.log(encendido);
-encendio = true && true;
-console.log("nuevo encendido", encendido);
