@@ -44,3 +44,117 @@ var alberto = new Persona('Alberto', 'Perez', 25);
 alberto.edadz = 20;
 console.log(alberto.nombrez, alberto.apellidoz, alberto.edadz);
 var pipe = new Persona('Pipe', 'Gomez', 23);
+var UserAccount = /** @class */ (function () {
+    function UserAccount(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+    return UserAccount;
+}());
+var usuarioInterface = new UserAccount('imagin dragons', 1);
+console.log(usuarioInterface.name, usuarioInterface.id);
+//reto: crear 5 clases para usar en nuestro proyecto de la tienda virtual 
+//crear sus gets y sets, un constructor y un método
+//class Productos, class Carrito, class Usuario, class MetodosDePago
+var Productos = /** @class */ (function () {
+    function Productos(nombre, precio, cantidad) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+    Productos.prototype.getNombre = function (nombre) {
+        return this.nombre;
+    };
+    Productos.prototype.setNombre = function (nombre) {
+        this.nombre = nombre;
+    };
+    Productos.prototype.getPrecio = function (precio) {
+        return this.precio;
+    };
+    Productos.prototype.setPrecio = function (precio) {
+        this.precio = precio;
+    };
+    Productos.prototype.getCantidad = function (cantidad) {
+        return this.cantidad;
+    };
+    Productos.prototype.setCantidad = function (cantidad) {
+        this.cantidad = cantidad;
+    };
+    Productos.prototype.mostrarProducto = function () {
+        console.log('Nombre:', this.nombre, 'Precio:', this.precio, 'Cantidad:', this.cantidad);
+    };
+    return Productos;
+}());
+var Carrito = /** @class */ (function () {
+    function Carrito(productos, total) {
+        this.productos = productos;
+        this.total = total;
+    }
+    Carrito.prototype.getProductos = function (productos) {
+        return this.productos;
+    };
+    Carrito.prototype.setProductos = function (productos) {
+        this.productos = productos;
+    };
+    Carrito.prototype.getTotal = function (total) {
+        return this.total;
+    };
+    Carrito.prototype.setTotal = function (total) {
+        this.total = total;
+    };
+    Carrito.prototype.mostrarCarrito = function () {
+        console.log('Productos:', this.productos, 'Total:', this.total);
+    };
+    return Carrito;
+}());
+var Usuario = /** @class */ (function () {
+    function Usuario(nombre, apellido, edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+    Usuario.prototype.getNombre = function (nombre) {
+        return this.nombre;
+    };
+    Usuario.prototype.setNombre = function (nombre) {
+        this.nombre = nombre;
+    };
+    Usuario.prototype.getApellido = function (apellido) {
+        return this.apellido;
+    };
+    Usuario.prototype.setApellido = function (apellido) {
+        this.apellido = apellido;
+    };
+    Usuario.prototype.getEdad = function (edad) {
+        return this.edad;
+    };
+    Usuario.prototype.setEdad = function (edad) {
+        this.edad = edad;
+    };
+    Usuario.prototype.mostrarUsuario = function () {
+        console.log('Nombre:', this.nombre, 'Apellido:', this.apellido, 'Edad:', this.edad);
+    };
+    return Usuario;
+}());
+var MetodosDePago = /** @class */ (function () {
+    function MetodosDePago(tarjeta, efectivo) {
+        this.tarjeta = tarjeta;
+        this.paypal = efectivo;
+    }
+    MetodosDePago.prototype.getTarjeta = function (tarjeta) {
+        return this.tarjeta;
+    };
+    MetodosDePago.prototype.setTarjeta = function (tarjeta) {
+        this.tarjeta = tarjeta;
+    };
+    MetodosDePago.prototype.getEfectivo = function (efectivo) {
+        return this.paypal;
+    };
+    MetodosDePago.prototype.setEfectivo = function (efectivo) {
+        this.paypal = efectivo;
+    };
+    MetodosDePago.prototype.mostrarMetodosDePago = function () {
+        console.log('Tarjeta:', this.tarjeta, 'Efectivo:', this.paypal);
+    };
+    return MetodosDePago;
+}());
