@@ -1,8 +1,8 @@
 const { MongoClient } = require('mongodb');
 
 // Definicion de user y pass
-const user = "pipeanayap";
-const pass = "PipilloGaymer1";
+const user = "Saul";
+const pass = "Saul2004";
 
 // Connection URI
 const uri = `mongodb+srv://${user}:${pass}@cluster0.efv8i.mongodb.net/`;
